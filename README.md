@@ -5,6 +5,8 @@ stages. Each stage represents a particular step in the process, such as Lead, Co
 Qualified, Proposal, Closed Won, and Closed Lost. A CRM pipeline allows sales teams to 
 track and manage their leads and opportunities more efficiently
 
+<strong>Live Demo: https://crm-systemm.netlify.app/
+
 <strong>Tech Stack: [![My Skills](https://skills.thijs.gg/icons?i=angular,tailwind,ts)](https://skills.thijs.gg)
 
 ## Main Features (Functional/Non-Functional requirements)
