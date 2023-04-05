@@ -1,27 +1,38 @@
 # CRMSystem
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
+A CRM pipeline is a visual representation of the sales process, divided into multiple 
+stages. Each stage represents a particular step in the process, such as Lead, Contacted, 
+Qualified, Proposal, Closed Won, and Closed Lost. A CRM pipeline allows sales teams to 
+track and manage their leads and opportunities more efficiently
 
-## Development server
+<strong>Tech Stack: [![My Skills](https://skills.thijs.gg/icons?i=angular,tailwind,ts)](https://skills.thijs.gg)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Main Features (Functional/Non-Functional requirements)
 
-## Code scaffolding
+* sales team can search for a specific deal in the system by client's firstname, lastname or email
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* sales team can drag and drop the deals based on the current stage
 
-## Build
+* adaptive to all screen sizes (Mobile,Tablet,etc..)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Issues / Bugs (to be solved)
 
-## Running unit tests
+* UI bug older component pipe not re-rendering because no API request has been made to update it
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+##  unit tests coverage
 
-## Running end-to-end tests
+* deals service
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Best practices
 
-## Further help
+* Encapsulating functionality (separation of concerns , DRY)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* SRP
+
+* Handling memory leaks
+
+* Tracking lists rerenders
+
+* Clean code , Readability
+
+

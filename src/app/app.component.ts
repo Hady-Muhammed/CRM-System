@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Deal } from 'src/models/Deal';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CRM-System';
+  searchTerm: string = ''
+  typing: boolean = false
+  draggedItem!: Deal
+  constructor() {}
+
+  isTyping() {
+    this.typing = true
+    setTimeout(() => {
+      this.typing = false
+    }, 1000);
+  }
 }

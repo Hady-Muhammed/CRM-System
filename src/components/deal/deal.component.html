@@ -1,0 +1,26 @@
+<div class="p-2 bg-white rounded-lg w-full mb-2 space-y-2 cursor-move">
+  <h4 class="font-semibold">{{ deal.first_name + " " + deal.last_name }}</h4>
+  <div class="flex space-x-2">
+    <span
+      class="text-xs w-fit h-fit font-medium rounded-lg p-1 px-2 text-white bg-gray-400"
+      >{{ deal.state | uppercase }}</span
+    >
+    <span
+      class="text-xs w-fit h-fit font-medium rounded-lg p-1 px-2 text-white bg-[#009688]"
+      >{{ deal.probability_status }}</span
+    >
+  </div>
+    <div class="flex justify-between items-center space-x-4">
+      <div class="flex space-x-1">
+        <i class="fa-solid fa-phone text-xs"></i>
+        <span class="text-[10px] font-bold">{{deal.company}}</span>
+      </div>
+      <div class="text-[10px] font-bold">
+        {{deal.phone}}
+      </div>
+    </div>
+    <div class="flex space-x-1 text-xs font-bold">
+      <i class="fa-sharp fa-regular fa-calendar text-xs"></i>
+      <span class="text-xs font-bold">{{deal.date}}</span>
+    </div>
+</div>
